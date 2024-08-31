@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    background-color: #ba0da0;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: #ba0da0;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: rgb(74, 153, 129);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Background Image for the Header Section */
+.header {
+    background: url('../pngtree-beautiful-background-photo-image_15790664.jpg') no-repeat center center/cover;
+    color: rgb(24, 12, 156);
+    padding: 150px 20px;
+}
+
+/* General Section Styling */
+.section {
+    padding: 60px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+
+.footer {
+    background-color: #032232;
+    color: white;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 30px 10px;
+    }
+}
+
