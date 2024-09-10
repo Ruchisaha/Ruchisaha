@@ -1,82 +1,58 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+body{
+    font-family: 'roboto', sans-serif;
+    line-height: 1,8;
+    margin: 0%;
+    padding: 0%;
+    color: #f4f7fa;
+    background-color: hsl(210, 81%, 92%);
 }
-
-header {
-    position: relative;
+header{
+    background-color:hsl(180, 25%, 76%);
     text-align: center;
-    color: #fff;
-    background-color: #333;
-}
-
-.banner img {
-    width: 80%; 
-    height: auto;
-    opacity: 0.8;
-}
-
-.banner h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-nav {
-    background-color: #444;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-section#home {
-    background-color: #f4f4f4;
     padding: 20px;
-    text-align: center;
+}
+header img{
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    zoom: 1.5;
+}
+header h1{
+    margin: 10px;
+    color: #14172c;
+}
+header p{
+    font-size: 16px;
+    color: #021f22;
+}
+section{
+    background-color:rgb(124, 169, 166);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+#about{
+    line-height: 30px;
+    padding: 11px;
+    font-size: 20px;
+}
+#about h2{
+    color: #02293b;
+    margin-bottom: 2px;
 }
 
-#destinations {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.destination {
-    width: 30%;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.destination img {
-    width: 100%; /* Set the maximum width of the images within the destination section */
-    height: auto; /* Maintain the aspect ratio */
-    max-width: 300px; /* Set the maximum width to make the image smaller */
-    border-radius: 8px;
-}
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(130, 204, 203);
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+    font-size: 20px;
 }
+
+footer a {
+    color: rgb(155, 197, 201);
+    text-decoration: none;
+}
+
+
