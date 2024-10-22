@@ -3,234 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css">
-    <title>Contact Us</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #ffecd2, #fcb69f); /* Added a background gradient */
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header */
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-        }
-
-        .logo {
-            font-size: 32px;
-            text-align: center;
-            font-weight: bold;
-            color: #fcb69f; /* Added logo color */
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .nav-list {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .nav-list li {
-            margin-left: 15px;
-        }
-
-        .nav-list a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .nav-list a:hover {
-            background: #fcb69f; /* Changed hover effect */
-        }
-
-        /* Contact Form Styles */
-        form {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            margin-top: 30px;
-            animation: fadeIn 1s ease-in; /* Added fade-in animation */
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            transition: border-color 0.3s;
-        }
-
-        form input:focus, form textarea:focus {
-            border-color: #fcb69f; /* Focus border color */
-            outline: none;
-            box-shadow: 0 0 5px rgba(252, 182, 159, 0.5);
-        }
-
-        button {
-            background-color: #28a745;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        button:hover {
-            background-color: #218838;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 15px 0;
-            background: #333;
-            color: white;
-            margin-top: 30px;
-        }
-
-        footer p {
-            margin: 0;
-            color: #fcb69f;
-        }
-
-        /* Contact Icons */
-        .contact-icons {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-
-        .contact-icons a {
-            font-size: 24px;
-            color: #28a745;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .contact-icons a:hover {
-            color: #218838;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-
-            .nav-list {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-list li {
-                margin: 5px 0;
-            }
-
-            form {
-                padding: 20px;
-            }
-
-            form input, form textarea {
-                font-size: 16px;
-            }
-
-            button {
-                font-size: 16px;
-            }
-
-            .contact-icons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .contact-icons a {
-                margin: 5px 0;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">Delicious Recipe</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Recipe.html">Recipe</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<nav class="navbar">
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Skills.html">skills</a></li>
+        <li><a href="project.html">projects</a></li>
+        <li><a href="Education & Experience.html">Education & experience</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+</nav>
 
     <div class="container">
         <h1>Contact Us</h1>
-        <!-- Formspree form integration -->
-        <form action="https://formspree.io/f/mjkvbgjvA" method="POST">
-
+        <form action="https://formspree.io/f/xgvevvvn" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <input type="email" id="email" name="email" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Write your message"></textarea>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-            <!-- Formspree anti-spam field -->
-            <input type="hidden" name="_captcha" value="false">
-
-            <button type="submit">Submit</button>
+            <button type="submit">Send Message</button>
         </form>
 
-        <div class="contact-icons">
-            <a href="mailto:ruchikumari24@navgurukul.org" title="Email us">📧</a>
-            <a href="tel:+8709233037" title="Call us">📞</a>
-            <a href="https://www.instagram.com/yourusername" title="Visit our Instagram" target="_blank">🔗</a>
+        <h2>Find Us Here:</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345099475!2d144.9537353153166!3d-37.81627997975162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11b77b%3A0x5045675218ceed6!2sQueen%20Victoria%20Market!5e0!3m2!1sen!2sau!4v1637923281045!5m2!1sen!2sau" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
         </div>
     </div>
-
-    <footer>
-        <div>
-            <p>&copy; 2024 Delicious Recipes</p>
-        </div>
-    </footer>
 </body>
 </html>
+<style>
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+</style>

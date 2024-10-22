@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="Education & Experience.html">Education & Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="skills-section">
+        <h1>My Skills</h1>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>Version Control (Git & GitHub)</li>
+            <li>Basic Python Programming</li>
+            <li>Communication & Collaboration</li>
+        </ul>
+    </section>
+</body>
+</html>
+<style>
+/* General Body Styling */
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Skills Section Styling */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.skills-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+
+.skills-list {
+    list-style-type:none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #f76c6c;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.skills-list li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect for Skills */
+.skills-list li:hover {
+    background-color: #333;
+    color: #f76c6c;
+}
+
+
+</style>

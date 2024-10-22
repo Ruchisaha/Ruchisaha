@@ -3,119 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css">
-    <title>About Us - Delicious Recipe</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">Delicious Recipe</h1>
-            <nav>
-                <div class="menu-icon"></div>
-                <ul class="nav-list">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Recipe.html">Recipe</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<nav class="navbar">
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Skills.html">skills</a></li>
+        <li><a href="project.html">projects</a></li>
+        <li><a href="Education & Experience.html">Education & experience</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+</nav>
+    <section id ="About me">
 
-    <!-- ........About Section........ -->
-    <section class="about">
-        <h1>About Us</h1>
-        <div class="about-content">
-            <h2>Meet Our Chefs</h2>
-            <div class="chef-list">
-                <div class="chef-card">
-                    <img src="WhatsApp Image 2024-09-07 at 16.24.07_2e71a21d - Copy.jpg" alt="Chef ruchi" class="chef-image">
-                    <h3>Ruchi Saha</h3>
-                    <p>A culinary genius known for innovative recipes and flavors.</p>
-                </div>
-                <div class="chef-card">
-                    <img src="WhatsApp Image 2024-09-30 at 16.02.39_1f5ff347 - Copy.jpg" alt="Chef kriti" class="chef-image">
-                    <h3>KRriti Ganesh</h3>
-                    <p>Specializes in desserts that are as beautiful as they are delicious.</p>
-                </div>
-                <div class="chef-card">
-                    <img src="WhatsApp Image 2024-09-30 at 19.32.06_0df3a42a - Copy.jpg" alt="Chef punam" class="chef-image">
-                    <h3>Punam</h3>
-                    <p>Expert in traditional recipes with a modern twist.</p>
-                </div>
-                <div class="chef-card">
-                    <img src="WhatsApp Image 2024-09-30 at 19.38.06_b67a888a - Copy.jpg" alt="Chef muskan" class="chef-image">
-                    <h3>Muskan</h3>
-                    <p>Famous for her exquisite pasta dishes and sauces.</p>
-                </div>
-            </div>
-            <p>Join us on a culinary journey filled with delicious recipes, tips, and inspiration to enhance your cooking experience.</p>
-        </div>
+
+        <p>Hi, I'm Ruchi Kumari, a B.Com student with a specialization in Accounting Honors. I live in a small town called Kishanganj, near Dangi Basti 🏡. Spending time with my family is something I cherish deeply 👨‍👩‍👧, and I also have a love for fast food 🍕🍔.
+
+            I am an enthusiastic intern and currently serve as an English Council member at NavGurukul 🌱. In this role, I help students improve their English communication skills through various interactive activities and tailored learning methods. I am passionate about creating an engaging and supportive environment that fosters learning and personal growth ✨. My aim is to build confidence in students' speaking and comprehension abilities, and to provide a collaborative space that encourages development.
+            
+            In my free time, I enjoy singing 🎤 and dancing alone 💃. I’m a simple, soft-hearted person 💖 who believes in kindness and staying true to myself. My current dream is to become a software engineer 💻, and with the guidance and support of NavGurukul, I'm working hard to make that dream a reality 🌟.
+            
+           </p> 
+           
+
+            
     </section>
+    <div>
+        <img src="WhatsApp Image 2024-09-07 at 16.24.07_2e71a21d - Copy.jpg" alt="">
+        <img src="WhatsApp Image 2024-10-18 at 14.33.49_b3935e56.jpg" alt="">
+        <img src="WhatsApp Image 2024-08-08 at 08.45.42_ce409fc2.jpg" alt="">
+        <img src="WhatsApp Image 2024-08-23 at 02.47.19_f254b450.jpg" alt="">
+        <img src="WhatsApp Image 2024-10-19 at 18.56.01_55fe61f0.jpg" alt="">
+        <img src="WhatsApp_Image_2024-10-01_at_10.05.35_AM_1.webp" alt="">
+        <img src="WIN_20240906_15_12_32_Pro.jpg" alt="">
+        
+        <img src="images (1).jpeg" alt="">
 
-    <footer>
-        <div>
-            <p>&copy;2024 Delicious Recipes</p>
-        </div>
-    </footer>
-</body>
+    </div>
+    </body>
 </html>
 <style>
-  .about {
-    padding: 40px 20px; /* Increased padding for more space */
-    text-align: center;
-    background-color: #ffe0b2; /* Light orange background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    margin-bottom: 40px; /* Added margin at the bottom */
+    
+    
+    div img {
+    width: 300px;  /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the entire area, maintaining the aspect ratio */
+    border-radius: 10px;
+    margin: 5px;
+    
+    display: inline-block;
 }
 
-.about-content {
-    margin-top: 20px;
-}
-
-.chef-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping to next line if needed */
-    margin-top: 20px;
-}
-
-.chef-card {
-    background-color: #fff; /* White background for each chef card */
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px;
-    margin: 10px; /* Space between chef cards */
-    width: 200px; /* Fixed width for cards */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for cards */
-}
-.chef-card:hover {
-    transform: scale(1.05);
-}
-.chef-image {
-    width: 100%; /* Full width for image */
-    height: auto;
-    border-radius: 10px; /* Rounded corners */
-}
-
-h1, h2 {
-    color: #d84315; /* Darker orange for headers */
-}
-
-h3 {
-    color: #ff7043; /* Coral color for chef names */
-}
-
-
-p {
-    color: #666; /* Softer text color for paragraphs */
-    line-height: 1.6; /* Spacing between lines */
-}
-
-footer {
-    margin-top: 20px; /* Space above footer */
-    background-color: #ff7043; /* Coral color for footer */
-    color: white; /* White text in footer */
-    text-align: center; /* Center text */
-    padding: 10px 0; /* Padding around the footer */
-}
+</style>
