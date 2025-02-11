@@ -3,106 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Chart & Admin Panel</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>Calendar Modal</title>
-    <title>Pie Chart Example</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
-
 <body>
-    
-    <!-- Side Menu -->
-    <div class="side-menu">
-        <div class="brand-name">
-            <h1>Brand</h1>
-        </div>
-        <ul>
-            <li><img src="dashboard (1).png" alt="">&nbsp;Dashboard</li>
-            <li><img src="students.png" alt="">&nbsp;Students</li>
-            <li><img src="teachers.png" alt="">&nbsp;Teachers</li>
-            <li><img src="schools.png" alt="">&nbsp;Schools</li>
-            <li><img src="income.png" alt="">&nbsp;Income</li>
-            <li><img src="help-web-button.png" alt="">&nbsp;Help</li>
-            <li><img src="settings.png" alt="">&nbsp;Settings</li>
-        </ul>
-    </div>
-
-    <!-- Main Container -->
     <div class="container">
-        <!-- Header Section -->
-        <div class="header">
-            <div class="nav">
-                <div class="search">
-                    <input type="text" placeholder="Search...">
-                    
-                    <button type="submit"><img src="search.png" alt=""></button>
-                </div>
-                
-                <div class="user">
-                    <a href="#" class="btn">Add New</a>
-                    <img src="notifications.png" alt="">
-                    <div class="img-case">
-                        <img src="user.png" alt="">
-                    </div>
-                    
-                </div>
-                <input type="date" placeholder="Search...">
-            </div>
+        <h1>ToDo App</h1>
+        <div class="input">
+            <input type="text" placeholder="Enter your task" id="inp">
+            <button onclick="Add()">Add</button>
         </div>
-       
-
-        <!-- Bar Chart Section -->
-        <div class="content">
-            <h2>Website Analytics</h2>
-            <table class="graph">
-                <caption>Traffic Sources</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Source</th>
-                        <th scope="col">Percentage</th>
-                    </tr>
-                </thead>
-                <tbody class="horizontal">
-                    <tr style="height:90%">
-                        <th scope="row">A1 level</th>
-                        <td><span>85%</span></td>
-                    </tr>
-                    <tr style="height:75%">
-                        <th scope="row">A2 level</th>
-                        <td><span>23%</span></td>
-                    </tr>
-                    <tr style="height:50%">
-                        <th scope="row">-A1 level</th>
-                        <td><span>7%</span></td>
-                    </tr>
-                    <tr style="height:38%">
-                        <th scope="row">B1 level</th>
-                        <td><span>38%</span></td>
-                    </tr>
-                    <tr style="height:15%">
-                        <th scope="row">B2 level</th>
-                        <td><span>35%</span></td>
-                    </tr>
-                    <tr style="height:30%">
-                        <th scope="row">D1 level</th>
-                        <td><span>30%</span></td>
-                    </tr>
-                    <tr style="height:50%">
-                        <th scope="row">C2 level</th>
-                        <td><span>5%</span></td>
-                    </tr>
-                    <tr style="height:20%">
-                        <th scope="row">C1 level</th>
-                        <td><span>20%</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="chart-container">
-            <div class="pie-chart"></div>
+        <div class="text">
+            
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>

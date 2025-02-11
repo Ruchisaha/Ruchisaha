@@ -1,324 +1,41 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+body{
+    background-color: rgb(57, 125, 128);
+    font-family: 'Courier New', Courier, monospace;
 
-body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
 }
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-h1, h2 {
-    color: black;
-}
-
-.btn {
-    background: palevioletred;
-    color: white;
-    padding: 5px 10px;
+.container{
+    width: 360px;
+    padding: 33px;
     text-align: center;
+    background-color: rgb(24, 79, 128);
+    margin-left: 33%;
+    margin-top: 5px;
+}
+input{
+    width: 270px;
+    padding: 8px;
+    border: 2px solid rgb(73, 182, 182);
+    outline: none;
+}
+button{
+    width: 60px;
+    height: 41px;
+    background-color: black;
+    color: #fae3e3;
     border: none;
+    outline: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    border-radius: 2px;
 }
-
-.btn:hover {
-    color: palevioletred;
-    background: white;
-    padding: 3px 8px;
-    border: 2px solid palevioletred;
-}
-
-/* Side Menu */
-.side-menu {
-    position: fixed;
-    background: palevioletred;
-    width: 20vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.side-menu .brand-name {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.side-menu li {
-    font-size: 24px;
-    padding: 10px 40px;
-    color: white;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.side-menu li:hover {
-    background: white;
-    color: palevioletred;
-}
-
-/* Main Container */
-.container {
-    position: absolute;
-    right: 0;
-    width: 80vw;
-    height: 100vh;
-    background: white;
-}
-
-.container .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 80vw;
-    height: 10vh;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container .header .nav {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container .header .nav .search {
-    flex: 3;
-    display: flex;
-    justify-content: center;
-}
-
-.container .header .nav .search input[type="text"] {
-    border: none;
-    background: white;
-    padding: 10px;
-    width: 50%;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.container .header .nav .search button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.container .header .nav .search button img {
-    width: 20px;
-}
-
-.container .header .nav .user {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.container .header .nav .user .img-case {
+.text li{
     position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.container .header .nav .user .img-case img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Graph Section */
-.graph {
-    margin: 0 auto;
-    font: normal 100%/150% Arial, Helvetica, sans-serif;
-    width: 80%;
-    max-width: 600px;
-}
-
-.graph caption {
-    font: bold 150%/120% Arial, Helvetica, sans-serif;
-    padding-bottom: 0.33em;
-    text-align: center;
-}
-
-.graph tbody th {
-    text-align: right;
-}
-
-@supports (display: grid) {
-    @media (min-width: 32em) {
-        .graph {
-            display: block;
-            height: 300px;
-        }
-
-        .graph thead {
-            display: none;
-        }
-
-        .graph tbody {
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
-            column-gap: 2.5%;
-            align-items: end;
-            height: 100%;
-            margin: 3em 0 1em 2.8em;
-            padding: 0 1em;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-            background: repeating-linear-gradient(
-                180deg,
-                rgba(170, 170, 170, 0.7) 0,
-                rgba(170, 170, 170, 0.7) 1px,
-                transparent 1px,
-                transparent 20%
-            );
-        }
-
-        .graph tbody:before,
-        .graph tbody:after {
-            position: absolute;
-            left: -3.2em;
-            width: 2.8em;
-            text-align: right;
-            font: bold 80%/120% Arial, Helvetica, sans-serif;
-        }
-
-        .graph tbody:before {
-            content: "100%";
-            top: -0.6em;
-        }
-
-        .graph tbody:after {
-            content: "0%";
-            bottom: -0.6em;
-        }
-
-        .graph tr {
-            position: relative;
-            display: block;
-        }
-
-        .graph tr:hover {
-            z-index: 999;
-        }
-
-        .graph th,
-        .graph td {
-            display: block;
-            text-align: center;
-        }
-
-        .graph tbody th {
-            position: absolute;
-            top: -3em;
-            left: 0;
-            width: 100%;
-            font-weight: normal;
-            text-align: center;
-            white-space: nowrap;
-            text-indent: 0;
-            transform: rotate(-45deg);
-        }
-
-        .graph tbody th:after {
-            content: "";
-        }
-
-        .graph td {
-            width: 100%;
-            height: 100%;
-            background: #F63;
-            border-radius: 0.5em 0.5em 0 0;
-            transition: background 0.5s;
-        }
-
-        .graph tr:hover td {
-            opacity: 0.7;
-        }
-
-        .graph td span {
-            overflow: hidden;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 0;
-            padding: 0.5em 0;
-            margin: -1em 0 0;
-            font: normal 85%/120% Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            opacity: 0;
-            transition: opacity 0.5s;
-            color: white;
-        }
-
-        .toggleGraph:checked + table td span,
-        .graph tr:hover td span {
-            width: 4em;
-            margin-left: -2em;
-            opacity: 1;
-        }
-        /* Calendar Styles */
-.calendar {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    height: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: white;
-}
-
-    }
-}
-/* Styles for centering the pie chart */
-.chart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Pie chart styles */
-.pie-chart {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: conic-gradient(
-        #ff0000 0% 25%,    /* Red slice 25% */
-        #00ff00 25% 50%,   /* Green slice 25% */
-        #0000ff 50% 75%,   /* Blue slice 25% */
-        #ffff00 75% 100%   /* Yellow slice 25% */
-    );
+    background-color: rgb(125, 201, 154);
+    color: #181b1a;
+    font-size:20px;
+    padding:7px ;
+    text-align: left;
+}.text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
 }
