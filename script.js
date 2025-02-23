@@ -1,8 +1,10 @@
+let reminders = [];
+
 function setReminder() {
     let timeInput = document.getElementById("reminder-time").value;
     let reminderText = document.getElementById("reminder-text").value;
     let reminderImage = document.getElementById("reminder-image").files[0];
-    
+
     if (!timeInput || !reminderText) {
         alert("Please enter both time and reminder note!");
         return;
@@ -20,23 +22,52 @@ function setReminder() {
         return;
     }
 
-    setTimeout(() => {
-        document.getElementById("alert-text").innerText = `⏰ ${reminderText} ⏰`;
-        document.getElementById("alert").classList.remove("hidden");
-
-        let alarmSound = document.getElementById("alarm-sound");
-        alarmSound.play();
-
-        if (reminderImage) {
-            let imgURL = URL.createObjectURL(reminderImage);
-            document.getElementById("reminder-photo").src = imgURL;
-        }
+    let reminderId = setTimeout(() => {
+        triggerAlarm(reminderText, reminderImage);
     }, timeDiff);
+
+    // Save reminder details
+    reminders.push({ id: reminderId, time: timeInput, text: reminderText });
+
+    displayReminders();
+}
+
+function triggerAlarm(text, imageFile) {
+    document.getElementById("alert-text").innerText = `⏰ ${text} ⏰`;
+    document.getElementById("alert").classList.remove("hidden");
+
+    let alarmSound = document.getElementById("alarm-sound");
+    alarmSound.play();
+
+    if (imageFile) {
+        let imgURL = URL.createObjectURL(imageFile);
+        document.getElementById("reminder-photo").src = imgURL;
+    }
 }
 
 function stopAlarm() {
     document.getElementById("alert").classList.add("hidden");
     let alarmSound = document.getElementById("alarm-sound");
     alarmSound.pause();
-    alarmSound.currentTime = 0; // Reset audio to start
+    alarmSound.currentTime = 0;
+}
+
+// Display all active reminders
+function displayReminders() {
+    let reminderList = document.getElementById("reminder-list");
+    reminderList.innerHTML = "<h3>Active Reminders:</h3>";
+    
+    reminders.forEach((reminder, index) => {
+        let reminderItem = document.createElement("div");
+        reminderItem.innerHTML = `${index + 1}. 🕒 ${reminder.time} - ${reminder.text} 
+            <button onclick="cancelReminder(${index})">❌ Remove</button>`;
+        reminderList.appendChild(reminderItem);
+    });
+}
+
+// Remove a reminder
+function cancelReminder(index) {
+    clearTimeout(reminders[index].id);
+    reminders.splice(index, 1);
+    displayReminders();
 }
