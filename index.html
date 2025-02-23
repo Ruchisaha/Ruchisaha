@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart Reminder Alarm</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 </head>
 <body>
     <div class="container">
-        <h1>ToDo App</h1>
-        <div class="input">
-            <input type="text" placeholder="Enter your task" id="inp">
-            <button onclick="Add()">Add</button>
-        </div>
-        <div class="text">
-            
-        </div>
+        <h1>💡 Smart Reminder</h1>
+
+        <label for="reminder-time">Select Time:</label>
+        <input type="time" id="reminder-time">
+
+        <label for="reminder-text">Reminder Note:</label>
+        <input type="text" id="reminder-text" placeholder="Enter your task...">
+
+        <label for="reminder-image">Choose Image:</label>
+        <input type="file" id="reminder-image" accept="image/*">
+
+        <button class="glow-btn" onclick="setReminder()">Set Reminder</button>
+
+        <div id="reminder-list"></div>
     </div>
+
+    <div id="alert" class="hidden">
+        <h2 id="alert-text">⏰ Time to do your task! ⏰</h2>
+        <img id="reminder-photo" src="reminder.png" alt="Reminder Image">
+        <audio id="alarm-sound" loop>
+            <source src="mixkit-mystwrious-bass-pulse-2298.wav" type="audio/wav">
+        </audio>
+        <button class"stop-btn" onclick="stopAlarm()">Stop Alarm</button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
