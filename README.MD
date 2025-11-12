@@ -1,78 +1,83 @@
+# 🍽️ Delicious Recipes Website
 
+Welcome to **Delicious Recipes**, a beautifully designed and fully responsive website that showcases a collection of mouth-watering recipes.  
+Built with **HTML, CSS, and JavaScript**, this project focuses on simplicity, responsiveness, and user-friendly navigation.
 
-**Delicious Recipes Website**
-==========================
+---
 
-**Table of Contents**
------------------
+## 🌐 Live Demo  
+👉 [Click Here to View Website](https://drive.google.com/file/d/1Sumt9-jOmBOgMz4bD6a2nfI2iDPPB7Lb/view?usp=sharing)
 
+---
+
+## 📋 Table of Contents
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Getting Started](#getting-started)
-4. [File Structure](#file-structure)
-5. [Customization](#customization)
+3. [Technologies Used](#technologies-used)
+4. [Getting Started](#getting-started)
+5. [File Structure](#file-structure)
+6. [Customization](#customization)
+7. [Screenshots](#screenshots)
+8. [Author](#author)
+9. [License](#license)
 
-**Introduction**
----------------
+---
 
-Delicious Recipes is a website designed to showcase a collection of recipes. The website is built using HTML, CSS, and JavaScript, and is fully responsive, making it accessible on various devices.
+## 🧁 Introduction
 
-**Features**
-------------
+**Delicious Recipes Website** is designed to showcase a variety of recipes in an elegant and interactive layout.  
+It includes navigation menus, hero banners, recipe cards, and a responsive contact form.  
+The project is ideal for beginners learning front-end development or anyone who wants to build a portfolio website.
 
-### 1. Recipe Showcase
+---
 
-* Display a collection of recipes with images, titles, and descriptions
-* Each recipe has a "View Recipe" button that links to a YouTube video or a recipe page
+## ✨ Features
 
-### 2. Navigation Menu
+### 🍲 Recipe Showcase
+- Display a collection of recipes with **images, titles, and descriptions**.  
+- Each recipe has a **“View Recipe”** button that links to a YouTube video or a recipe page.
 
-* A navigation menu with links to Home, About, Recipe, and Contact pages
-* The menu is responsive and collapses into a hamburger menu on smaller screens
+### 🧭 Navigation Menu
+- Includes navigation links to **Home**, **About**, **Recipe**, and **Contact** pages.  
+- Fully **responsive** — turns into a hamburger menu on smaller screens.
 
-### 3. Hero Section
+### 🎯 Hero Section
+- Features a **marquee** with a welcome message.  
+- Includes a **search bar** for easy recipe lookup.
 
-* A hero section with a marquee that displays a welcome message
-* A search bar that allows users to search for recipes
+### 📬 Contact Form
+- Functional **contact form** where users can send messages.  
+- Includes input fields for name, email, and message (Formspree integration recommended).
 
-### 4. Footer
+### 🦶 Footer
+- Contains copyright text.
+- Includes social media profile links.
 
-* A footer with copyright information and a link to the website's social media profiles
+### 📱 Responsive Design
+- The website is **mobile-friendly** and adjusts smoothly to all device sizes.
 
-### 5. Contact Form
+### 🎨 Customizable
+- Design and layout can be modified easily using CSS and HTML.
 
-* A contact form that allows users to send messages to the website owner
-* The form includes fields for name, email, and message
+---
 
-### 6. Responsive Design
+## 🧰 Technologies Used
 
-* The website is fully responsive and adapts to different screen sizes and devices
+| Technology | Purpose |
+|-------------|----------|
+| **HTML5** | Structure and content |
+| **CSS3** | Styling and responsive design |
+| **JavaScript** | Interactivity and dynamic elements |
+| **Formspree** *(optional)* | Email submission for contact form |
+| **Google Fonts** | Custom typography |
+| **Font Awesome** | Icons for better UI |
 
-### 7. Customizable
+---
 
-* The website's design and layout can be customized using CSS and HTML
+## 🚀 Getting Started
 
-**Getting Started**
--------------------
+Follow these simple steps to set up and view the project locally 👇  
 
-1. Clone the repository or download the zip file
-2. Open the `index.html` file in a web browser to view the website
-3. Customize the website by editing the HTML, CSS, and JavaScript files
-
-**File Structure**
------------------
-
-* `index.html`: The main HTML file that contains the website's structure and content
-* `style.css`: The CSS file that controls the website's layout and design
-* `script.js`: The JavaScript file that contains the website's interactive elements
-* `images`: A folder that contains the website's images
-* `recipes`: A folder that contains the recipe pages
-
-**Customization**
-----------------
-
-* To customize the website's design and layout, edit the `style.css` file
-* To add or remove recipes, edit the `index.html` file and add or remove recipe cards
-* To change the website's content, edit the `index.html` file and update the text and images
-
-Note: This is a basic website and may require additional features and functionality to make it fully functional.
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/yourusername/delicious-recipes.git
